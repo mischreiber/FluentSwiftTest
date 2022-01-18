@@ -17,6 +17,11 @@
 		7352392627968A7C0015BD5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735238FC27968A7B0015BD5E /* ContentView.swift */; };
 		7352392727968A7C0015BD5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 735238FD27968A7C0015BD5E /* Assets.xcassets */; };
 		7352392827968A7C0015BD5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 735238FD27968A7C0015BD5E /* Assets.xcassets */; };
+		7352393927968BA00015BD5E /* FluentUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7352393827968BA00015BD5E /* FluentUI */; };
+		7352393B27968E3F0015BD5E /* AvatarDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7352393A27968E3F0015BD5E /* AvatarDemoView.swift */; };
+		7352393C27968E3F0015BD5E /* AvatarDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7352393A27968E3F0015BD5E /* AvatarDemoView.swift */; };
+		7352393E27968F7D0015BD5E /* FluentUIDemoToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7352393D27968F7D0015BD5E /* FluentUIDemoToggle.swift */; };
+		7352393F27968F7D0015BD5E /* FluentUIDemoToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7352393D27968F7D0015BD5E /* FluentUIDemoToggle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,8 @@
 		7352391B27968A7C0015BD5E /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7352391F27968A7C0015BD5E /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		7352392127968A7C0015BD5E /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		7352393A27968E3F0015BD5E /* AvatarDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarDemoView.swift; sourceTree = "<group>"; };
+		7352393D27968F7D0015BD5E /* FluentUIDemoToggle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluentUIDemoToggle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7352393927968BA00015BD5E /* FluentUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +107,8 @@
 			children = (
 				735238FB27968A7B0015BD5E /* FluentSwiftTestApp.swift */,
 				735238FC27968A7B0015BD5E /* ContentView.swift */,
+				7352393A27968E3F0015BD5E /* AvatarDemoView.swift */,
+				7352393D27968F7D0015BD5E /* FluentUIDemoToggle.swift */,
 				735238FD27968A7C0015BD5E /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -157,6 +167,9 @@
 			dependencies = (
 			);
 			name = "FluentSwiftTest (iOS)";
+			packageProductDependencies = (
+				7352393827968BA00015BD5E /* FluentUI */,
+			);
 			productName = "FluentSwiftTest (iOS)";
 			productReference = 7352390227968A7C0015BD5E /* FluentSwiftTest.app */;
 			productType = "com.apple.product-type.application";
@@ -249,6 +262,9 @@
 				Base,
 			);
 			mainGroup = 735238F527968A7B0015BD5E;
+			packageReferences = (
+				7352393727968BA00015BD5E /* XCRemoteSwiftPackageReference "fluentui-apple" */,
+			);
 			productRefGroup = 7352390327968A7C0015BD5E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -300,6 +316,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7352392527968A7C0015BD5E /* ContentView.swift in Sources */,
+				7352393B27968E3F0015BD5E /* AvatarDemoView.swift in Sources */,
+				7352393E27968F7D0015BD5E /* FluentUIDemoToggle.swift in Sources */,
 				7352392327968A7C0015BD5E /* FluentSwiftTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +327,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7352392627968A7C0015BD5E /* ContentView.swift in Sources */,
+				7352393C27968E3F0015BD5E /* AvatarDemoView.swift in Sources */,
+				7352393F27968F7D0015BD5E /* FluentUIDemoToggle.swift in Sources */,
 				7352392427968A7C0015BD5E /* FluentSwiftTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -693,6 +713,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7352393727968BA00015BD5E /* XCRemoteSwiftPackageReference "fluentui-apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/microsoft/fluentui-apple.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7352393827968BA00015BD5E /* FluentUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7352393727968BA00015BD5E /* XCRemoteSwiftPackageReference "fluentui-apple" */;
+			productName = FluentUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 735238F627968A7B0015BD5E /* Project object */;
 }

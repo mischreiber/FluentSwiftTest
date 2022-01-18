@@ -6,11 +6,27 @@
 //
 
 import SwiftUI
+import FluentUI
+
+struct DemoLookup {
+    let name: String
+    let view: AnyView
+}
 
 struct ContentView: View {
+    let demos: [DemoLookup] = [
+        DemoLookup(name: "Avatar", view: AnyView(AvatarDemoView()))
+    ]
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List(demos, id: \.self.name) { demo in
+                NavigationLink(
+                    destination: demo.view.navigationTitle(demo.name)) {
+                        Text(demo.name)
+                }
+            }.navigationTitle("FluentUI")
+        }
     }
 }
 
