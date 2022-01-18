@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "FluentUI",
+        "repositoryURL": "https://github.com/microsoft/fluentui-apple.git",
+        "state": {
+          "branch": null,
+          "revision": "cca2541cd199682157596d28066a08eb19e7caec",
+          "version": "0.4.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
